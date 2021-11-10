@@ -1,0 +1,18 @@
+.front-page {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.front-page h1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*Paragraph font still fucked*/
+.front-page p {
+  font-weight: initial;
+}
+
+.front-page button {
+  background-color: blueviolet;
+}
