@@ -1,3 +1,39 @@
+var timerEl = document.getElementById('countdown');
+
+
+function countdown() {
+    var timeLeft = 5;
+  
+    var timeInterval = setInterval(function() {
+      timerEl.textContent = "Time Left:" + timeLeft;
+      if(timeLeft > 0){
+        timeLeft--;
+      }else{
+        clearInterval(timeInterval);
+        timerEl.textContent = "";
+        displayMessage();
+  
+      }
+    },1000);
+    console.log(time)
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Questions and Answers for quiz
 
 //Q One

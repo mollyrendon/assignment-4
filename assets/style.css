@@ -1,3 +1,6 @@
+* {
+}
+
 .front-page {
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -13,6 +16,16 @@
   font-weight: initial;
 }
 
-.start-button {
+.start-button button {
   background-color: blueviolet;
+  text-align: center;
+}
+
+.questions {
+  text-align: center;
+}
+
+.answer-choices {
+  text-align: center;
+  line-height: 1.5;
 }
