@@ -1,9 +1,26 @@
 * {
 }
 
+/*Navagation Styles*/
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  text-decoration: none;
+}
+
+.nav-list li {
+  list-style-type: none;
+}
+
+.high-score {
+  color: purple;
+}
+
+/*Front Page Styles*/
 .front-page {
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .front-page h1 {
@@ -11,21 +28,11 @@
   font-size: 20px;
 }
 
-/*Paragraph font still fucked*/
 .front-page p {
   font-weight: initial;
 }
 
-.start-button button {
+.start-button {
   background-color: blueviolet;
   text-align: center;
-}
-
-.questions {
-  text-align: center;
-}
-
-.answer-choices {
-  text-align: center;
-  line-height: 1.5;
 }
