@@ -10,48 +10,34 @@
 </head>
 
 <body>
-
-
-  <!--High Scores Page-->
-  <div>
-    <a href="high-scores.html">High Scores</a><br />
-  </div>
-
-
-
-  <!--Quiz Timer-->
-
-    
-  
+ <!--Nav Bar-->
+ <header>
+   <nav class="nav-bar">
+    <ul class="nav-list">
+      <li class="high-score">
+        <a href="high-scores.html">High Scores</a>
+      </li>
+      <li class="time-remaining">
+        Time Remaining
+      </li>
+    </ul>
+  </nav>
+ </header> 
+ 
 
   <!--Quiz title and instructions-->
-    <div class="front-page">
-      <h1>Coding Quiz Challenge</h1>
-        <p>Try to answer the following code-related questions within the time limit. </br>
-        Keep in mind that incorrect answers will penalize your score/time </br>
-        by ten seconds!
-        </p>
-    </div>
-
-    <!--Start Quiz Button-->
-    <div class="start-button"><button>Start Quiz</button></div>
-
-
-    <!--Questions and Answers Section-->
-    <section>
-      <div class="questions">
-        <h3>How do you make a comment in HTML?</h3>
-      </div>
-      <div class="answer-choices">
-        <div class="choice-button"><button>1.  //Comment</button></div>
-
-        <div class="choice-button"><button>2.  None of the above</button></div>
-
-        <div class="choice-button"><button>3.  /*Comment*/</button></div>
-
-        <div class="choice-button"><button>4.  /Comment</button></div>
+    <section class="intro-page">
+      <div class="front-page">
+          <h1>Coding Quiz Challenge</h1>
+          <p>Try to answer the following code-related questions within the time limit. </br>
+          Keep in mind that incorrect answers will penalize your score/time </br>
+          by ten seconds!
+          </p> 
+          
+        <!--Start Quiz Button-->
+        <button class="start-button" onclick="">Start Quiz</button>
+      </div> 
     </section>
-
 
 
   <!--Footer-->
