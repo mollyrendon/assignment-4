@@ -1,7 +1,4 @@
-* {
-}
-
-/*Navagation Styles*/
+/*Navigation Styles*/
 .nav-list {
   display: flex;
   justify-content: space-between;
@@ -14,10 +11,11 @@
 }
 
 .high-score {
-  color: purple;
+  color: rgb(191, 63, 191);
 }
 
 /*Front Page Styles*/
+
 .front-page {
   text-align: center;
   font-family: Arial, sans-serif;
@@ -33,6 +31,20 @@
 }
 
 .start-button {
-  background-color: blueviolet;
+  background-color: rgb(191, 63, 191);
   text-align: center;
+  font-size: 15px;
 }
+
+/*Questions and Answer Styles*/
+.choice-button {
+  display: block;
+}
+
+.choice-button {
+  background-color: rgb(191, 63, 191);
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+/*High Scores Page*/

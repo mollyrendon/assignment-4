@@ -9,21 +9,21 @@
   <link rel="stylesheet" href="./assets/style.css">
 </head>
 
+
 <body>
  <!--Nav Bar-->
  <header>
-   <nav class="nav-bar">
+   <nav class="nav-bar" id="nav-bar">
     <ul class="nav-list">
       <li class="high-score">
         <a href="high-scores.html">High Scores</a>
       </li>
-      <li class="time-remaining">
-        Time Remaining
+      <li class="timer">
+        Time Remaining <span id="timer"></span>
       </li>
     </ul>
   </nav>
  </header> 
- 
 
   <!--Quiz title and instructions-->
     <section class="intro-page">
@@ -36,8 +36,75 @@
           
         <!--Start Quiz Button-->
         <button class="start-button" onclick="">Start Quiz</button>
+        
       </div> 
     </section>
+
+   <!--Questions and Answers Section-->
+ <div class="quiz-container" id="quiz-container">
+  <div class="quiz-container">
+    <div class="questions">
+      <h3>How do you make a comment in HTML?</h3>
+    </div> 
+    <div class="answer-choices">
+    <button class="choice-button">1.  //Comment</button></div>
+
+    <button class="choice-button">2.  None of the above</button></div>
+
+    <button class="choice-button">3.  /*Comment*/</button></div>
+
+    <button class="choice-button">4.  /Comment</button></div>
+
+    <div class="questions">
+      <h3>How do you change the background color to 'dark blue' in CSS?</h3>
+    </div>
+    <div class="answer-choices">
+      <button class="choice-button">1.  background-color:  dark blue;</button></div>
+
+      <button class="choice-button">2.  color-background:  darkblue</button></div>
+
+      <button class="choice-button">3.  background-color:  darkblue</button></div>
+
+      <button class="choice-button">4.  background-color: darkblue;</button></div>
+
+    <div class="questions">
+        <h3>In which part of the HTML document is the style.css sheet linked?</h3>
+  </div>
+  <div class="answer-choices">
+    <button class="choice-button">1.  Head</button></div>
+
+    <button class="choice-button">2.  Body</button></div>
+
+    <button class="choice-button">3.  Header</button></div>
+
+    <button class="choice-button">4.  Main</button></div>
+
+    <div class="questions">
+      <h3>How do you check the status of your files in Git?</h3>
+    </div>
+    <div class="answer-choices">
+      <button class="choice-button">1.  git-status</button></div>
+
+      <button class="choice-button">2.  check status</button></div>
+
+      <button class="choice-button">3.  git status</button></div>
+
+      <button class="choice-button">4.  file status</button></div>
+
+      <div class="questions">
+        <h3>What is the purpose of the alt attribute on an img tag?</h3>
+      </div>
+      <div class="answer-choices">
+        <button class="choice-button">1.  To add a description to the image to make it more accessable</button></div>
+
+        <button class="choice-button">2.  To change the size of the image</button></div>
+
+        <button class="choice-button">3.  To make the image circular</button></div>
+
+        <button class="choice-button">4.  To make the image brighter</button></div>
+      </div>
+  </div>
+
 
 
   <!--Footer-->
