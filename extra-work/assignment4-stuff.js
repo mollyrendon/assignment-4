@@ -57,7 +57,7 @@ function myFunction() {
 
 
          //Questions and Answers as Objects
-const questions = [
+var questions = [
     {
         question:"How do you make a comment in HTML?",
         answers: {
