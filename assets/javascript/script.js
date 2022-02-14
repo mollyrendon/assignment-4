@@ -1,15 +1,16 @@
-//Quiz Functions
+function startQuiz() {
+    
+}
 
+
+
+
+//Quiz Questions
 var questions = [
     {
         question:"How do you make a comment in HTML?",
-        answers: {
-            a:"//Comment",
-            b:"<!--Comment-->",
-            c:"/*Comment*/",
-            d:"/Comment",
-        },
-        correctAnswer:"b. <!--Comment-->"
+        // answers: ["//Comment", "<!--Comment-->" "/*Comment*/" "/Comment"],        
+        correctAnswer:"<!--Comment-->"
     },
     {
         question:"How do you change the background color to 'dark blue' in CSS?",
