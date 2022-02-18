@@ -5,118 +5,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
   <title>Code Quiz Challenge</title>
-  <link rel="stylesheet" href="./assets/stylesheet/style.css">
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 
 <body>
-  
-  
-  
-  
-  
-  
-  
+  <div class="container">
+    <!-- View High Scores and Timer -->
+    <header class="row">
+        <div class="col-md-6" id="Highscores">
+            <a href="./high-scores.html">View Highscores</a>
+        </div>
+        <div class="col-md-6" id="timer">
+            Time: <span id="time">0</span>
+        </div>
 
+    </header>
 
-
-
- <!--View High Scores and Timer-->
- <header>
-   <nav class="nav-bar" id="nav-bar">
-    <ul class="nav-list">
-      <li class="high-score">
-        <a href="high-scores.html">High Scores</a>
-      </li>
-      <li class="timer">
-        Time Remaining <span id="timer"></span>
-      </li>
-    </ul>
-  </nav>
- </header> 
-
-  <!--Quiz title and instructions-->
-    <section class="intro-page">
-      <div class="front-page">
-          <h1>Coding Quiz Challenge</h1>
-          <p>Try to answer the following code-related questions within the time limit. </br>
-          Keep in mind that incorrect answers will penalize your score/time </br>
-          by ten seconds!
-          </p> 
-          
-        <!--Start Quiz Button-->
-        <button class="start-button" onclick="">Start Quiz</button>
-        
-      </div> 
+    <!-- Quiz Title and Introduction -->
+    <section id="title-section" class="show">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Coding Quiz Challenge</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Try and answer the following code-related questions within the time limit. Keep in mind that
+                    incorrect answers will penalize your your score time by 10 seconds!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button id="startButton">Start Quiz</button>
+            </div>
+        </div>
     </section>
 
-   <!--Questions and Answers Section-->
- <div class="quiz-container" id="quiz-container">
-  <div class="quiz-container">
-    <div class="questions">
-      <h3>How do you make a comment in HTML?</h3>
-    </div> 
-    <div class="answer-choices">
-    <button class="choice-button">1.  //Comment</button></div>
+    <!-- Coding questions -->
+    <section id="quiz-section" class="hide">
+        <div class="row">
+            <div class="col-md-12 questions">
+                <h3 id="question-title"></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="choices"></div>
+            <div id="feedback" class="feedback hide"></div>
+        </div>
+    </section>
 
-    <button class="choice-button">2.  None of the above</button></div>
-
-    <button class="choice-button">3.  /*Comment*/</button></div>
-
-    <button class="choice-button">4.  /Comment</button></div>
-
-    <div class="questions">
-      <h3>How do you change the background color to 'dark blue' in CSS?</h3>
-    </div>
-    <div class="answer-choices">
-      <button class="choice-button">1.  background-color:  dark blue;</button></div>
-
-      <button class="choice-button">2.  color-background:  darkblue</button></div>
-
-      <button class="choice-button">3.  background-color:  darkblue</button></div>
-
-      <button class="choice-button">4.  background-color: darkblue;</button></div>
-
-    <div class="questions">
-        <h3>In which part of the HTML document is the style.css sheet linked?</h3>
-  </div>
-  <div class="answer-choices">
-    <button class="choice-button">1.  Head</button></div>
-
-    <button class="choice-button">2.  Body</button></div>
-
-    <button class="choice-button">3.  Header</button></div>
-
-    <button class="choice-button">4.  Main</button></div>
-
-    <div class="questions">
-      <h3>How do you check the status of your files in Git?</h3>
-    </div>
-    <div class="answer-choices">
-      <button class="choice-button">1.  git-status</button></div>
-
-      <button class="choice-button">2.  check status</button></div>
-
-      <button class="choice-button">3.  git status</button></div>
-
-      <button class="choice-button">4.  file status</button></div>
-
-      <div class="questions">
-        <h3>What is the purpose of the alt attribute on an img tag?</h3>
-      </div>
-      <div class="answer-choices">
-        <button class="choice-button">1.  To add a description to the image to make it more accessable</button></div>
-
-        <button class="choice-button">2.  To change the size of the image</button></div>
-
-        <button class="choice-button">3.  To make the image circular</button></div>
-
-        <button class="choice-button">4.  To make the image brighter</button></div>
-      </div>
-  </div>
-
-
+    <!-- High Score section -->
+    <section id="highscore-section" class="hide">
+        <div class="row">
+            <div id="high-score" class="col-md-12">
+                <h2>All done!</h2>
+                <h3>Your final score is <span id="final-score">0</span></h3>
+                <label for="initials-area">Enter initials:</label>
+                <input type="text" name="initials-area" maxlength="4" id="initials">
+                <button id="submit-button" type="submit">Submit</button>
+            </div>
+        </div>
+    </section>
 
   <script src="./assets/javascript/script.js"></script>
   <script src="./assets/javascript/questions.js"></script>
